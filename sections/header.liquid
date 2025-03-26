@@ -122,7 +122,7 @@
   {% if header_tag == 'sticky-header' %}
     data-sticky-type="{{ section.settings.sticky_header_type }}"
   {% endif %}
-  class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
+  class="header-wrapper color-{{ section.settings.color_scheme }} gradient"
 >
   {%- liquid
     assign social_links = false
@@ -174,6 +174,7 @@
         {%- else -%}
           <span class="h2">{{ shop.name }}</span>
         {%- endif -%}
+        Untitled UI
       </a>
       {%- if request.page_type == 'index' -%}
         </h1>
@@ -223,7 +224,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
+    {% comment %} <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <localization-form class="small-hide medium-hide" data-prevent-hide>
@@ -301,6 +302,10 @@
           </div>
         {%- endif -%}
       </a>
+    </div> {% endcomment %}
+    <div class="header__buttons">
+      <a>Log in</a>
+      <a>Sign up</a>
     </div>
   </header>
 </{{ header_tag }}>

@@ -100,7 +100,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   padding-right: 3rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .page-width {
     padding: 0 5rem;
   }
@@ -2456,7 +2456,7 @@ input[type='checkbox'] {
 }
 
 .header__heading-logo-wrapper {
-  width: 100%;
+  /* width: 100%; */
   display: inline-block;
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
 }
@@ -2479,7 +2479,6 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 990px) {
-  .header--middle-left .header__heading-link,
   .header--top-left .header__heading-link {
     margin-left: -0.75rem;
   }
@@ -3598,17 +3597,15 @@ details-disclosure > details {
 
 /*********** Custom CSS ************/
 /* Header */
-
 sticky-header .header__heading-logo{
   width: 32px;
-  height: 32px;
-  object-fit: cover;    width: 32px;
-  height: 32px;
+  height: 32px;  
   object-fit: cover;
 }
 
 sticky-header .header, .header:not(.drawer-menu).page-width{
   padding: 18px 80px;
+  gap: 40px;
   margin: 0 auto;
 }
 
@@ -3617,15 +3614,65 @@ sticky-header  .header__active-menu-item{
   font-size: 1.6rem;
   color: #fff;
   font-weight: 600;
-  font-size: 16px;
   line-height: 24px;
+  padding: 0;
   letter-spacing: 0;
+}
+
+header .list-menu--inline{
+  gap: 32px;
+  padding: 4px 0;
 }
 
 sticky-header .header__active-menu-item,
 sticky-header .header__active-menu-item:hover,
 sticky-header .header__menu-item:hover span{
   text-decoration: none;
+}
+
+header .header__heading-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.header__buttons{
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+@media screen and (max-width: 992px){
+  
+  sticky-header .header, .header:not(.drawer-menu).page-width {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 16px 20px 16px 16px;
+    margin: 0 auto;
+  }
+
+  header .header__icons{
+    display: none;
+  }
+
+  header .header__heading-link{
+    padding: 0;
+  }
+
+  header .header__icon, .header__icon--cart .icon{
+    width: 24px;
+    height: 24px;
+  }
+
+  header .header__icon--menu .icon path{
+    stroke: #fff;
+  }
 }
 
 /* Header End */
