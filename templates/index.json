@@ -16,7 +16,8 @@
           "type": "heading",
           "settings": {
             "heading": "Simple banking that works like magic.",
-            "heading_size": "h0"
+            "heading_size": "hxxl",
+            "subtitle": "Simple, transparent banking. No hidden fees and free overdrafts."
           }
         },
         "button": {
