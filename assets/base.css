@@ -3597,9 +3597,9 @@ details-disclosure > details {
 }
 
 /*********** Custom CSS ************/
-
 /* Header */
-.header__heading-logo{
+
+sticky-header .header__heading-logo{
   width: 32px;
   height: 32px;
   object-fit: cover;    width: 32px;
@@ -3612,7 +3612,8 @@ sticky-header .header, .header:not(.drawer-menu).page-width{
   margin: 0 auto;
 }
 
-sticky-header .list-menu__item{
+sticky-header .list-menu__item,
+sticky-header  .header__active-menu-item{
   font-size: 1.6rem;
   color: #fff;
 }
@@ -3624,13 +3625,4 @@ sticky-header .header__menu-item:hover span{
 }
 
 /* Header End */
-
-/* Footer */
-
-footer.footer{
-  background-color: rgba(249, 250, 251, 1);
-}
-
-/* Footer End */
-
 /*********** Custom CSS End ************/
