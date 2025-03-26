@@ -1,0 +1,45 @@
+{{ 'feature-media.css' | asset_url | stylesheet_tag }}
+
+<div class="container feature">
+  {% if section.settings.subtitle != blank %}
+    <p class="feature__subtitle">{{ section.settings.subtitle }}</p>
+  {% endif %}
+
+  {% if section.settings.title != blank %}
+    <h2 class="feature__title">{{ section.settings.title }}</h2>
+  {% endif %}
+
+  {% if section.settings.description != blank %}
+    <p class="feature__subtitle-content">{{ section.settings.description }}</p>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Features",
+  "tag": "section",
+  "class": "section-inspiration",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature Media"
+    }
+  ]
+}
+{% endschema %}

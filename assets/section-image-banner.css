@@ -361,7 +361,7 @@
   .banner--desktop-transparent .banner__box {
     padding: 4rem 0;
     background: transparent;
-    max-width: 89rem;
+    max-width: 768px;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -391,10 +391,6 @@
   .banner__box > * + .banner__text {
     margin-top: 2rem;
   }
-}
-
-.banner__box > * + * {
-  margin-top: 1rem;
 }
 
 .banner__box > *:first-child {
@@ -459,10 +455,6 @@
   }
 }
 
-.banner__box > * + .banner__buttons {
-  margin-top: 2rem;
-}
-
 @media screen and (max-width: 749px) {
   .banner:not(.slideshow) .rte a,
   .banner:not(.slideshow) .inline-richtext a:hover,
@@ -479,7 +471,27 @@
   }
 }
 
-
+/*********** Custom CSS ************/
 .banner .media{
   background: var(--gradient-background);
 }
+
+.banner__heading.hxxl{
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+.banner__box .subtitle{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 24px 0 48px;
+  padding: 0;
+  color: rgba(234, 236, 240, 1);
+}
+/*********** Custom CSS End ************/
