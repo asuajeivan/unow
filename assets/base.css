@@ -3596,7 +3596,9 @@ details-disclosure > details {
   }
 }
 
-/* Custom CSS */
+/*********** Custom CSS ************/
+
+/* Header */
 .header__heading-logo{
   width: 32px;
   height: 32px;
@@ -3621,4 +3623,14 @@ sticky-header .header__menu-item:hover span{
   text-decoration: none;
 }
 
-/* Custom CSS end */
+/* Header End */
+
+/* Footer */
+
+footer.footer{
+  background-color: rgba(249, 250, 251, 1);
+}
+
+/* Footer End */
+
+/*********** Custom CSS End ************/
