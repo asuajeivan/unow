@@ -3609,4 +3609,16 @@ sticky-header .header, .header:not(.drawer-menu).page-width{
   padding: 18px 80px;
   margin: 0 auto;
 }
+
+sticky-header .list-menu__item{
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+sticky-header .header__active-menu-item,
+sticky-header .header__active-menu-item:hover,
+sticky-header .header__menu-item:hover span{
+  text-decoration: none;
+}
+
 /* Custom CSS end */
