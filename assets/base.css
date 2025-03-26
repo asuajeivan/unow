@@ -3616,6 +3616,10 @@ sticky-header .list-menu__item,
 sticky-header  .header__active-menu-item{
   font-size: 1.6rem;
   color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
 }
 
 sticky-header .header__active-menu-item,

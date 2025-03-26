@@ -541,5 +541,6 @@ footer .footer__start-trial p{
   letter-spacing: 0;
   font-weight: 400;
   color: rgba(71, 84, 103, 1);
+  font-family: var(--font-heading-family);
 }
 /*********** Custom CSS End ************/
