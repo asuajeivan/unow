@@ -3595,3 +3595,18 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* Custom CSS */
+.header__heading-logo{
+  width: 32px;
+  height: 32px;
+  object-fit: cover;    width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+sticky-header .header, .header:not(.drawer-menu).page-width{
+  padding: 18px 80px;
+  margin: 0 auto;
+}
+/* Custom CSS end */
