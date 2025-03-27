@@ -48,9 +48,18 @@
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
+    },
+    "feature_media_Aca6jK": {
+      "type": "feature-media",
+      "settings": {
+        "subtitle": "Features",
+        "title": "The only card you’ll ever need. Simple.",
+        "description": "Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business."
+      }
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "feature_media_Aca6jK"
   ]
 }
