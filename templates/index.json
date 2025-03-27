@@ -54,7 +54,8 @@
       "settings": {
         "subtitle": "Features",
         "title": "The only card you’ll ever need. Simple.",
-        "description": "Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business."
+        "description": "Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business.",
+        "color_scheme": "scheme-2"
       }
     }
   },
