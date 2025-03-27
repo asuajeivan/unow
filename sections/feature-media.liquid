@@ -1,6 +1,6 @@
 {{ 'feature-media.css' | asset_url | stylesheet_tag }}
 
-<div class="container feature">
+<div class="container feature color-{{ section.settings.color_scheme }}">
   {% if section.settings.subtitle != blank %}
     <p class="feature__subtitle">{{ section.settings.subtitle }}</p>
   {% endif %}
