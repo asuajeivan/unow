@@ -43,7 +43,7 @@
         "desktop_content_position": "top-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": false
@@ -55,7 +55,7 @@
         "subtitle": "Features",
         "title": "The only card you’ll ever need. Simple.",
         "description": "Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business.",
-        "color_scheme": "scheme-2"
+        "color_scheme": "scheme-3"
       }
     }
   },
