@@ -51,6 +51,40 @@
     },
     "feature_media_Aca6jK": {
       "type": "feature-media",
+      "blocks": {
+        "feature_MgmyhT": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/message-chat-circle.svg",
+            "title": "Unlimited cards",
+            "description": "Give your team the autonomy they need with access to as many cards as they need. Authorise purchases with a click. Simple.",
+            "url": "#"
+          }
+        },
+        "feature_8hxahd": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/currency-dollar-circle.svg",
+            "title": "Easy expense policies",
+            "description": "Every card comes with configurable spending limits, purchase restrictions, and cancellations for each employee and team.",
+            "url": "#"
+          }
+        },
+        "feature_9A8nfF": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/message-chat-circle.svg",
+            "title": "Advanced analytics",
+            "description": "An all-in-one platform that helps you balance everything your team need to be happy and your finances in order.",
+            "url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "feature_MgmyhT",
+        "feature_8hxahd",
+        "feature_9A8nfF"
+      ],
       "settings": {
         "subtitle": "Features",
         "title": "The only card you’ll ever need. Simple.",
