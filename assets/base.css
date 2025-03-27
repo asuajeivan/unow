@@ -3721,12 +3721,12 @@ header .header__heading-link{
 }
 
 @media screen and (max-width: 992px){
-  .banner__content .container__buttons{
+  .container__buttons{
     flex-direction: column-reverse;
     align-items: center;
   }
 
-  .banner__content .btn{
+  .container__buttons .btn{
     width: 100%;
     max-width: 100%;
     height: 48px;

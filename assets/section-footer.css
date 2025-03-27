@@ -542,11 +542,19 @@ footer .footer__start-trial p{
   color: rgba(71, 84, 103, 1);
 }
 
+.footer .container__buttons{
+  display: none;
+}
+
 @media screen and (max-width: 992px){
 
   .footer{
     padding: 64px 16px;
   }
+
+  .footer .container__buttons{
+    display: flex;
+  } 
 
   footer .footer__start-trial h2{
     font-weight: 600;
