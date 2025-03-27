@@ -515,10 +515,6 @@
   bottom: 0;
 }
 
-/* .banner .media--card-one img {
-  height: 322.71px;
-} */
-
 .banner__heading.hxxl{
   font-weight: 600;
   font-size: 72px;
@@ -536,5 +532,34 @@
   margin: 24px 0 48px;
   padding: 0;
   color: rgba(234, 236, 240, 1);
+}
+
+@media screen and (max-width: 992px){
+  .hero-banner{
+    height: 736px;
+  }
+
+  .banner .banner__media-half,
+  .banner__background{
+    display: none;
+  }
+
+  .banner__content .banner__heading.hxxl{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .banner__content .banner__box .subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+    margin-bottom: 32px;
+    text-align: left;
+  }
 }
 /*********** Custom CSS End ************/

@@ -85,6 +85,7 @@
     background-color: rgba(244, 235, 255, 1);
     border: solid 8px rgba(249, 245, 255, 1);
     border-radius: 28px;
+    min-width: 48px;
     width: 48px;
     height: 48px;
 }
@@ -121,4 +122,54 @@
     letter-spacing: 0;
     text-decoration: none;
     color: rgba(23, 92, 211, 1);
+}
+
+@media screen and (max-width: 992px){
+    .section-inspiration {
+        background-color: #fff;
+        max-width: 100%;
+        width: 100%;
+        padding: 64px 16px;
+    }
+
+    .section-inspiration .container .feature__content{
+        padding: 0;
+        height: auto;
+    }
+
+    .section-inspiration .container .feature__cards .feature__cards-inner{
+        gap: 40px;
+        padding: 0;
+    }
+
+    .section-inspiration .container .feature__cards{
+        margin-top: 48px;
+    }
+
+    .section-inspiration .container .feature__cards .feature__cards-inner .feature__card-content{
+        margin: 6px 0 0;
+    }
+    
+    .section-inspiration .container .feature__cards .feature__cards-inner .feature__card-content .feature__card-title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin-bottom: 4px;
+    }
+
+    .section-inspiration .container .feature__cards .feature__cards-inner .feature__card-content .feature__card-description{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0;
+        margin-bottom: 16px;
+    }
+
+    .section-inspiration .container .feature__cards .feature__cards-inner .feature__card-content .feature__card-link{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
 }

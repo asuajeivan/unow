@@ -541,4 +541,37 @@ footer .footer__start-trial p{
   font-weight: 400;
   color: rgba(71, 84, 103, 1);
 }
+
+.footer .container__buttons{
+  display: none;
+}
+
+@media screen and (max-width: 992px){
+
+  .footer{
+    padding: 64px 16px;
+  }
+
+  .footer .container__buttons{
+    display: flex;
+  } 
+
+  footer .footer__start-trial h2{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  footer .footer__start-trial p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
 /*********** Custom CSS End ************/
