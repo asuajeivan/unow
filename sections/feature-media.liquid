@@ -19,29 +19,45 @@
     <div class="feature__cards-inner">
       {% for block in section.blocks %}
         <figure class="feature__card">
-          <div class="feature__card-image">
-            <img src="{{ block.settings.image | image_url: width: 24, height: 24 }}" alt="{{ block.settings.title }}" width="24" height="24">
-          </div>
+          {% if block.settings.image != blank %}
+            <div class="feature__card-image">
+              <img
+                src="{{ block.settings.image | image_url: width: 24, height: 24 }}"
+                alt="{{ block.settings.title }}"
+                width="24"
+                height="24"
+              >
+            </div>
+          {% endif %}
 
           <figcaption class="feature__card-content">
-            <h3 class="feature__card-title">{{ block.settings.title }}</h3>
-            <p class="feature__card-description">{{ block.settings.description }}</p>
-            <a href="{{ block.settings.url }}" class="feature__card-link" aria-label="{{ block.settings.title }}">Learn more</a>
-          </figcaption>
+            {% if block.settings.title != blank %}
+              <h3 class="feature__card-title">{{ block.settings.title }}</h3>
+            {% endif %}
 
+            {% if block.settings.description != blank %}
+              <p class="feature__card-description">{{ block.settings.description }}</p>
+            {% endif %}
+
+            {% if block.settings.url != blank %}
+              <a href="{{ block.settings.url }}" class="feature__card-link" aria-label="{{ block.settings.title }}"
+                >Learn more</a
+              >
+            {% endif %}
+          </figcaption>
         </figure>
       {% endfor %}
     </div>
 
     <div class="feature__cards-background">
       <div class="feature__cards-background-inner">
-        {% comment %} <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--top" width="479" height="288">
-        <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--middle" width="479" height="288">
-        <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--bottom" width="479" height="288">
-       {% endcomment %}
+        {% comment %}
+          <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--top" width="479" height="288">
+          <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--middle" width="479" height="288">
+          <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--bottom" width="479" height="288">
+        {% endcomment %}
       </div>
     </div>
-
   </div>
 </div>
 
@@ -102,7 +118,7 @@
           "type": "url",
           "id": "url",
           "label": "Learn more"
-        },
+        }
       ]
     }
   ],
