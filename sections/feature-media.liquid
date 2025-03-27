@@ -14,6 +14,35 @@
       <p class="feature__subtitle-content">{{ section.settings.description }}</p>
     {% endif %}
   </div>
+
+  <div class="feature__cards">
+    <div class="feature__cards-inner">
+      {% for block in section.blocks %}
+        <figure class="feature__card">
+          <div class="feature__card-image">
+            <img src="{{ block.settings.image | image_url: width: 24, height: 24 }}" alt="{{ block.settings.title }}" width="24" height="24">
+          </div>
+
+          <figcaption class="feature__card-content">
+            <h3 class="feature__card-title">{{ block.settings.title }}</h3>
+            <p class="feature__card-description">{{ block.settings.description }}</p>
+            <a href="{{ block.settings.url }}" class="feature__card-link" aria-label="{{ block.settings.title }}">Learn more</a>
+          </figcaption>
+
+        </figure>
+      {% endfor %}
+    </div>
+
+    <div class="feature__cards-background">
+      <div class="feature__cards-background-inner">
+        {% comment %} <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--top" width="479" height="288">
+        <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--middle" width="479" height="288">
+        <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--bottom" width="479" height="288">
+       {% endcomment %}
+      </div>
+    </div>
+
+  </div>
 </div>
 
 {% schema %}
@@ -42,6 +71,39 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Learn more"
+        },
+      ]
     }
   ],
   "presets": [
