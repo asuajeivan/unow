@@ -37,6 +37,8 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/Credit_card_mockup_2.png",
+        "image_2": "shopify://shop_images/Credit_card_mockup_1.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
