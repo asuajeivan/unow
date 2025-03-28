@@ -515,11 +515,21 @@
   bottom: 0;
 }
 
+.banner__content .banner__top{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center; 
+  color: rgba(234, 236, 240, 1); 
+}
+
 .banner__heading.hxxl{
   font-weight: 600;
   font-size: 72px;
   line-height: 90px;
   text-align: center;
+  margin: 12px 0 0;
   letter-spacing: -2px;
 }
 
