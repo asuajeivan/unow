@@ -78,8 +78,10 @@
           height: image_height,
           class: image_class,
           sizes: sizes,
+          loading: "lazy",
           widths: widths,
-          fetchpriority: fetch_priority
+          fetchpriority: fetch_priority,
+          alt:"card"
       }}
     </div>
   {%- elsif section.settings.image_2 == blank -%}
@@ -111,7 +113,8 @@
           class: image_class_2,
           sizes: sizes,
           widths: widths,
-          fetchpriority: fetch_priority
+          fetchpriority: fetch_priority,
+          alt:"card"
       }}
     </div>
   {%- endif -%}
@@ -146,7 +149,7 @@
   </div>
 </div>
 <div class="banner__background">
-  <img width="1280" height="720" src="{{ 'background-light.png' | asset_url }}">
+  <img loading="lazy" fetchpriority="high" alt="rainbow-background" width="1280" height="720" src="{{ 'background-light.png' | asset_url }}">
 </div>
 
 {% schema %}

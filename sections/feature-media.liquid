@@ -26,6 +26,9 @@
                 alt="{{ block.settings.title }}"
                 width="24"
                 height="24"
+                loading="lazy"
+                alt="icon"
+                class="scroll-trigger animate--fade-in"
               >
             </div>
           {% endif %}
@@ -51,11 +54,9 @@
 
     <div class="feature__cards-background">
       <div class="feature__cards-background-inner">
-        {% comment %}
-          <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--top" width="479" height="288">
-          <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--middle" width="479" height="288">
-          <img src="{{ section.settings.background_image | image_url: width: 24, height: 24 }}" alt="" class="feature__cards-background-image--bottom" width="479" height="288">
-        {% endcomment %}
+        <img class="cards-background-inner--top scroll-trigger animate--fade-in" loading="lazy" alt="credit card" width="479" height="288" src="{{ 'Credit1.png' | asset_url }}">
+        <img class="cards-background-inner--middle scroll-trigger animate--fade-in" loading="lazy" alt="credit card" width="479" height="288" src="{{ 'Credit2.png' | asset_url }}">
+        <img class="cards-background-inner--bottom scroll-trigger animate--fade-in" loading="lazy" alt="credit card" width="479" height="288" src="{{ 'Credit3.png' | asset_url }}">
       </div>
     </div>
   </div>
