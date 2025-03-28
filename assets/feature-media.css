@@ -94,7 +94,6 @@
     margin: 10px 0 0;
     max-width: 512px;
     width: 100%;
-    height: 140px;
 }
 
 .section-inspiration .container .feature__cards .feature__cards-inner .feature__card-content .feature__card-title{
@@ -125,6 +124,34 @@
 }
 
 @media screen and (max-width: 992px){
+
+    .section-inspiration .container .feature__content span{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .section-inspiration .container .feature__content h2{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: 0;
+        margin-bottom: 16px;
+    }
+
+    .section-inspiration .container .feature__content p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0;
+    }
+
+    .section-inspiration .container .feature__cards{
+        flex-direction: column;
+        margin-top: 48px;
+    }
+
     .section-inspiration {
         background-color: #fff;
         max-width: 100%;
@@ -140,10 +167,7 @@
     .section-inspiration .container .feature__cards .feature__cards-inner{
         gap: 40px;
         padding: 0;
-    }
-
-    .section-inspiration .container .feature__cards{
-        margin-top: 48px;
+        margin: 0;
     }
 
     .section-inspiration .container .feature__cards .feature__cards-inner .feature__card-content{

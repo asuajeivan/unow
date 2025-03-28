@@ -540,10 +540,15 @@ footer .footer__start-trial p{
   letter-spacing: 0;
   font-weight: 400;
   color: rgba(71, 84, 103, 1);
+  margin-bottom: 40px;
+}
+
+footer .btn--secondary, footer .btn--primary{
+  padding: 12px 20px;
 }
 
 .footer .container__buttons{
-  display: none;
+  justify-content: center;
 }
 
 @media screen and (max-width: 992px){
