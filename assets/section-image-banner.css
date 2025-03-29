@@ -165,7 +165,7 @@
 .banner__media {
   height: 100%;
   position: absolute;
-  left: 0;
+  left: 40px;
   width: 100%;
   will-change: transform;
   transform: translateZ(0);
@@ -179,7 +179,7 @@
 }
 
 .banner__media-half + .banner__media-half {
-  right: 0;
+  right: -25px;
   left: auto;
 }
 
@@ -567,13 +567,13 @@
 @media screen and (max-width: 749px) {
   .hero-banner {
     contain-intrinsic-size: auto 400px;
-    height: 736px;
+    height: 800px;
   }
 
-  .banner .banner__media-half,
+  /* .banner .banner__media-half,
   .banner__background{
     display: none;
-  }
+  } */
 
   .banner__content .banner__heading.hxxl{
     font-weight: 600;
@@ -651,4 +651,78 @@
     transition: transform 0.3s ease-out;
   }
 }
+
+@media screen and (max-width: 990px){
+  .banner--large:not(.banner--adapt){
+    max-width: 620px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .banner .banner__media-half{
+    width: 420px;
+    height: 331.71px;
+  }
+
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box{
+    top: 0;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .banner__box{
+    padding: 0;
+    padding-top: 64px;
+  }
+
+  .banner--large:not(.banner--adapt){
+    max-width: 485px;
+  }
+
+  .banner .banner__media-half{
+    bottom: -6px;
+    width: 332px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .banner .banner__media-half {
+    width: 250px;
+  }
+
+  .banner--large:not(.banner--adapt){
+    max-width: 370px;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 375px){
+
+  .section.hero-banner{
+    background-position: -200px 320px;
+    background-size: 650px 630px;
+  }
+  
+  .banner .banner__media-half{
+    width: 308px;
+    bottom: 35px;
+  }
+
+  .banner .media--card-one{
+    left: -10px;
+  }
+
+  .banner__media.media--card-one img{
+    left: -5px;
+  }
+
+  .banner .media--card-two{
+    right: -8px;
+    bottom: 40px;
+    width: 280px;
+  }
+}
+
 /*********** Custom CSS End ************/

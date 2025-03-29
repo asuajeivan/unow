@@ -3637,7 +3637,7 @@ header .header__heading-link{
   gap: 16px;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 989px){
   
   sticky-header .header, .header:not(.drawer-menu).page-width {
     display: flex;
@@ -3645,10 +3645,6 @@ header .header__heading-link{
     justify-content: space-between;
     padding: 16px 20px 16px 16px;
     margin: 0 auto;
-  }
-
-  header .container__buttons{
-    display: none;
   }
 
   header .header__heading-link{
@@ -3721,10 +3717,14 @@ header .header__heading-link{
   width: 122px;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 990px){
   .container__buttons{
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  header .container__buttons{
+    display: none;
   }
 
   .container__buttons .btn{
