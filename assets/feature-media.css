@@ -166,6 +166,34 @@
 
 @media screen and (max-width: 992px){
 
+    .section-inspiration .container .feature__cards{
+        height: auto;
+    }
+
+    .section-inspiration .container .feature__cards-background{
+        height: 320px;
+    }
+
+    .feature__cards-background .feature__cards-background-inner .cards-background-inner--bottom{
+        bottom: 40px;
+        left: 215px;
+    }
+
+    .feature__cards-background .feature__cards-background-inner .cards-background-inner--middle{
+        bottom: 109px;
+        left: 221px;
+    }
+
+    .feature__cards-background .feature__cards-background-inner .cards-background-inner--bottom{
+        bottom: 40px;
+        left: 215px;
+    }
+
+    .section-inspiration .feature__cards-background .feature__cards-background-inner img{
+        width: 100px !important;
+        height: 120px !important;
+    }
+
     .section-inspiration .container .feature__content span{
         font-weight: 600;
         font-size: 14px;
@@ -190,6 +218,7 @@
 
     .section-inspiration .container .feature__cards{
         flex-direction: column;
+        align-items: center;
         margin-top: 48px;
     }
 
