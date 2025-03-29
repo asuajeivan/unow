@@ -25,10 +25,13 @@
 
 {%- style -%}
   .hero-banner{
-    background-image: url('{{ "rainbow.png" | asset_url }}');
+    background-image: url('{{ "rainbow.webp" | asset_url }}');
     background-position: 546px 35px;
     background-repeat: no-repeat;
     background-size: cover;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 
   #Banner-{{ section.id }}::after {
