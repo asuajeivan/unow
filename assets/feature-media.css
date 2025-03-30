@@ -55,7 +55,8 @@
     gap: 64px;
     max-width: 1280px;
     width: 100%;
-    height: 560px;
+    /* height: 560px; */
+    height: auto;
     margin-top: 65px;
 }
 
@@ -80,7 +81,7 @@
 }
 
 .feature__cards-background .feature__cards-background-inner .cards-background-inner--top {
-    top: 24px;
+    top: 18px;
     left: 76.81px;
     width: 560px;
     height: 470px;
@@ -89,7 +90,7 @@
 }
 
 .feature__cards-background .feature__cards-background-inner .cards-background-inner--middle{
-    bottom: -50px;
+    bottom: -37px;
     left: 32px;
     width: 640px;
     height: 511px;
@@ -98,7 +99,7 @@
 } 
 
 .feature__cards-background .feature__cards-background-inner .cards-background-inner--bottom{
-    bottom: -146px;
+    bottom: -134px;
     left: 8px;
     width: 679px;
     height: 515px;
@@ -164,34 +165,45 @@
     color: rgba(23, 92, 211, 1);
 }
 
+.feature--card-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1380px){
+
+    .section-inspiration .container .feature__cards{
+        align-items: center;
+    }
+
+    .feature__cards-background-inner{
+        display: none;
+    }
+
+    .section-inspiration .container .feature--card-mobile{
+        display: block;
+        object-fit: cover;
+        height: 413px;
+        margin: 0 auto;
+    }
+
+    .section-inspiration .container .feature__cards-background{
+        background-color: #fff;
+        height: 100%;
+    }
+
+    .section-inspiration .container .feature__cards .feature__cards-inner img{
+        object-fit: cover;
+        height: auto;
+        max-width:375px;
+        width: 100%;
+    }
+
+}
+
 @media screen and (max-width: 992px){
 
     .section-inspiration .container .feature__cards{
         height: auto;
-    }
-
-    .section-inspiration .container .feature__cards-background{
-        height: 320px;
-    }
-
-    .feature__cards-background .feature__cards-background-inner .cards-background-inner--bottom{
-        bottom: 40px;
-        left: 215px;
-    }
-
-    .feature__cards-background .feature__cards-background-inner .cards-background-inner--middle{
-        bottom: 109px;
-        left: 221px;
-    }
-
-    .feature__cards-background .feature__cards-background-inner .cards-background-inner--bottom{
-        bottom: 40px;
-        left: 215px;
-    }
-
-    .section-inspiration .feature__cards-background .feature__cards-background-inner img{
-        width: 100px !important;
-        height: 120px !important;
     }
 
     .section-inspiration .container .feature__content span{
@@ -220,13 +232,14 @@
         flex-direction: column;
         align-items: center;
         margin-top: 48px;
+        gap: 24.62px;
     }
 
     .section-inspiration {
         background-color: #fff;
         max-width: 100%;
         width: 100%;
-        padding: 64px 16px;
+        padding: 64px 16px 0;
     }
 
     .section-inspiration .container .feature__content{

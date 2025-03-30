@@ -55,18 +55,20 @@
     <div class="feature__cards-background">
       <div class="feature__cards-background-inner">
         <picture>
-          <source srcset="{{ 'Credit1.webp' | asset_url }}" type="image/webp">
+          <source media="(min-width: 993px)" srcset="{{ 'Credit1.webp' | asset_url }}" type="image/webp">
+          <source media="(max-width: 992px)" srcset="{{ 'feature-media-mobile.css.webp' | asset_url }}" type="image/webp">
           <img class="cards-background-inner--top scroll-trigger animate--fade-in" loading="lazy" alt="credit card" width="479" height="288" src="{{ 'Credit1.png' | asset_url }}" fetchpriority="high">
         </picture>
         <picture>
-          <source srcset="{{ 'Credit2.webp' | asset_url }}" type="image/webp">
+          <source media="(min-width: 993px)" srcset="{{ 'Credit2.webp' | asset_url }}" type="image/webp">
           <img class="cards-background-inner--middle scroll-trigger animate--fade-in" loading="lazy" alt="credit card" width="479" height="288" src="{{ 'Credit2.png' | asset_url }}">
         </picture>
         <picture>
-          <source srcset="{{ 'Credit3.webp' | asset_url }}" type="image/webp">
+          <source media="(min-width: 993px)" srcset="{{ 'Credit3.webp' | asset_url }}" type="image/webp">
           <img class="cards-background-inner--bottom scroll-trigger animate--fade-in" loading="lazy" alt="credit card" width="479" height="288" src="{{ 'Credit3.png' | asset_url }}">
         </picture>
       </div>
+      <img class="feature--card-mobile scroll-trigger animate--fade-in" loading="lazy" alt="credit card" width="375" height="320" src="{{ 'feature-media-mobile.css.webp' | asset_url }}" fetchpriority="high">
     </div>
   </div>
 </div>
