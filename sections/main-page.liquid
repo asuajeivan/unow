@@ -18,6 +18,9 @@
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
+  <div class="metafield-info">
+    {{ page.metafields.custom.info }}
+  </div>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
