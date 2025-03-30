@@ -500,7 +500,7 @@ h6:empty {
 }
 
 .link--text:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  color: #fff;
 }
 
 .link-with-icon {
@@ -3719,6 +3719,10 @@ header .header__heading-link{
 
 @media screen and (max-width: 990px){
   .container__buttons{
+    display: flex;
+    max-width: 343px;
+    width: 100%;
+    margin: 0 auto;
     flex-direction: column-reverse;
     align-items: center;
   }

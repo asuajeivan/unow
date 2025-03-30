@@ -567,13 +567,8 @@
 @media screen and (max-width: 749px) {
   .hero-banner {
     contain-intrinsic-size: auto 400px;
-    height: 800px;
+    height: 680px;
   }
-
-  /* .banner .banner__media-half,
-  .banner__background{
-    display: none;
-  } */
 
   .banner__content .banner__heading.hxxl{
     font-weight: 600;
@@ -653,6 +648,11 @@
 }
 
 @media screen and (max-width: 990px){
+
+  .banner__box{
+    text-align: left;
+  }
+
   .banner--large:not(.banner--adapt){
     max-width: 620px;
     height: 100%;
@@ -675,6 +675,7 @@
   .banner__box{
     padding: 0;
     padding-top: 64px;
+    text-align: left;
   }
 
   .banner--large:not(.banner--adapt){
@@ -699,6 +700,10 @@
 }
 
 @media screen and (max-width: 375px){
+
+  .hero-banner {
+    height: 800px;
+  }
 
   .section.hero-banner{
     background-position: -200px 320px;

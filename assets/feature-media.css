@@ -267,7 +267,7 @@
 
     .section-inspiration .container .feature__cards .feature__cards-inner .feature__card-content .feature__card-description{
         font-weight: 400;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 24px;
         letter-spacing: 0;
         margin-bottom: 16px;
@@ -277,6 +277,6 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
-        letter-spacing: 0%;
+        letter-spacing: 0;
     }
 }
