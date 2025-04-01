@@ -80,18 +80,27 @@
             "description": "An all-in-one platform that helps you balance everything your team need to be happy and your finances in order.",
             "url": "#"
           }
+        },
+        "feature_xcd6H7": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/currency-dollar-circle.svg",
+            "title": "ejemplo",
+            "description": "lorem",
+            "url": "#"
+          }
         }
       },
       "block_order": [
         "feature_MgmyhT",
         "feature_8hxahd",
-        "feature_9A8nfF"
+        "feature_9A8nfF",
+        "feature_xcd6H7"
       ],
       "settings": {
         "subtitle": "Features",
         "title": "The only card you’ll ever need. Simple.",
-        "description": "Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business.",
-        "color_scheme": "scheme-3"
+        "description": "Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business."
       }
     }
   },
